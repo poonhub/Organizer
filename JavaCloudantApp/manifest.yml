@@ -1,0 +1,12 @@
+---
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: poonWeb
+  host: poonWeb
+  disk_quota: 1024M
+  services:
+  - poonWeb-MonitoringAndAnalytics
+  - poonWeb-cloudantNoSQLDB
